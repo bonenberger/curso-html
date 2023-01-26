@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        main {
+            padding: 20px;
+            margin: auto;
+            max-width: 700px;
+            height: 98vh;
+            border: 1px solid #000000;
+            border-radius: 10px;
+        }
+        caption {
+            font-size: 1.5em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+        table {
+            margin: auto;
+            width: 500px;
+            border: 1px solid #000000;
+            border-collapse: collapse;
+            position: relative;
+        }
+        thead {
+            background-color: lightgrey;
+            color: blue;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: lightgrey;
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: lightgrey;
+        }
+        td, th {
+            border: 1px solid #000000;
+        }
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Tabelas Grandes</h1>
+        <p>
+            As tabelas podem ter cabeçalho, corpo e rodapé, conforme abaixo: <br>
+            TABLE (tag) <br>
+            THEAD <br>
+            TBODY <br>
+            TFOOT <br>
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>  
+                    <th scope="col" style="width: 70px;">População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>são paulo</td>
+                    <td class="num">22.550.000</td>
+                </tr>
+                <tr>
+                    <td>minas gerais</td>
+                    <td class="num">11.780.600</td>
+                </tr>
+                <tr>
+                    <td>rio de janeiro</td>
+                    <td class="num">10.460.720</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total</th> <!-- o scope serve para indicar onde os dados referentes ao th serão apresentados -->
+                    <td class="num"><strong>44.791.320</strong></td>
+                </tr>
+            </tfoot>
+            <caption>População da unidades federativas do Brasil</caption>
+        </table>
+        <p>não importa a ordem em que o thead, tbody e o tfoot sejam digitados no html. eles sempre serão mostrados na ordem correta.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veniam assumenda aspernatur, nemo laborum fugiat voluptatibus quae consequuntur quas sit non maiores facere distinctio eum? Qui cumque asperiores fugiat velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ea possimus sed at perspiciatis fugiat nostrum est animi laudantium iste doloribus laboriosam, fuga nobis blanditiis quas eveniet error debitis natus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, quis architecto quasi soluta, officiis accusantium repellat suscipit magni praesentium deserunt rerum, ullam dolorum nemo iure quos eaque sunt tempora! Voluptatibus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, eos illum veritatis exercitationem, magnam, repellendus recusandae vel ut quidem dolor non? Blanditiis aut facere eos amet, odit quaerat autem alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita numquam quos quam iste, necessitatibus earum accusamus possimus esse aperiam hic! Hic maxime aperiam laudantium sunt voluptates quis atque excepturi nihil!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veniam assumenda aspernatur, nemo laborum fugiat voluptatibus quae consequuntur quas sit non maiores facere distinctio eum? Qui cumque asperiores fugiat velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ea possimus sed at perspiciatis fugiat nostrum est animi laudantium iste doloribus laboriosam, fuga nobis blanditiis quas eveniet error debitis natus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, quis architecto quasi soluta, officiis accusantium repellat suscipit magni praesentium deserunt rerum, ullam dolorum nemo iure quos eaque sunt tempora! Voluptatibus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, eos illum veritatis exercitationem, magnam, repellendus recusandae vel ut quidem dolor non? Blanditiis aut facere eos amet, odit quaerat autem alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita numquam quos quam iste, necessitatibus earum accusamus possimus esse aperiam hic! Hic maxime aperiam laudantium sunt voluptates quis atque excepturi nihil!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veniam assumenda aspernatur, nemo laborum fugiat voluptatibus quae consequuntur quas sit non maiores facere distinctio eum? Qui cumque asperiores fugiat velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ea possimus sed at perspiciatis fugiat nostrum est animi laudantium iste doloribus laboriosam, fuga nobis blanditiis quas eveniet error debitis natus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, quis architecto quasi soluta, officiis accusantium repellat suscipit magni praesentium deserunt rerum, ullam dolorum nemo iure quos eaque sunt tempora! Voluptatibus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, eos illum veritatis exercitationem, magnam, repellendus recusandae vel ut quidem dolor non? Blanditiis aut facere eos amet, odit quaerat autem alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita numquam quos quam iste, necessitatibus earum accusamus possimus esse aperiam hic! Hic maxime aperiam laudantium sunt voluptates quis atque excepturi nihil!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veniam assumenda aspernatur, nemo laborum fugiat voluptatibus quae consequuntur quas sit non maiores facere distinctio eum? Qui cumque asperiores fugiat velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ea possimus sed at perspiciatis fugiat nostrum est animi laudantium iste doloribus laboriosam, fuga nobis blanditiis quas eveniet error debitis natus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, quis architecto quasi soluta, officiis accusantium repellat suscipit magni praesentium deserunt rerum, ullam dolorum nemo iure quos eaque sunt tempora! Voluptatibus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, eos illum veritatis exercitationem, magnam, repellendus recusandae vel ut quidem dolor non? Blanditiis aut facere eos amet, odit quaerat autem alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita numquam quos quam iste, necessitatibus earum accusamus possimus esse aperiam hic! Hic maxime aperiam laudantium sunt voluptates quis atque excepturi nihil!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veniam assumenda aspernatur, nemo laborum fugiat voluptatibus quae consequuntur quas sit non maiores facere distinctio eum? Qui cumque asperiores fugiat velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ea possimus sed at perspiciatis fugiat nostrum est animi laudantium iste doloribus laboriosam, fuga nobis blanditiis quas eveniet error debitis natus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, quis architecto quasi soluta, officiis accusantium repellat suscipit magni praesentium deserunt rerum, ullam dolorum nemo iure quos eaque sunt tempora! Voluptatibus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, eos illum veritatis exercitationem, magnam, repellendus recusandae vel ut quidem dolor non? Blanditiis aut facere eos amet, odit quaerat autem alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita numquam quos quam iste, necessitatibus earum accusamus possimus esse aperiam hic! Hic maxime aperiam laudantium sunt voluptates quis atque excepturi nihil!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veniam assumenda aspernatur, nemo laborum fugiat voluptatibus quae consequuntur quas sit non maiores facere distinctio eum? Qui cumque asperiores fugiat velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ea possimus sed at perspiciatis fugiat nostrum est animi laudantium iste doloribus laboriosam, fuga nobis blanditiis quas eveniet error debitis natus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, quis architecto quasi soluta, officiis accusantium repellat suscipit magni praesentium deserunt rerum, ullam dolorum nemo iure quos eaque sunt tempora! Voluptatibus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, eos illum veritatis exercitationem, magnam, repellendus recusandae vel ut quidem dolor non? Blanditiis aut facere eos amet, odit quaerat autem alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita numquam quos quam iste, necessitatibus earum accusamus possimus esse aperiam hic! Hic maxime aperiam laudantium sunt voluptates quis atque excepturi nihil!</p>
+    </main>
+</body>
+</html>
