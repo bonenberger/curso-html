@@ -8,9 +8,7 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-        }
-        table {
-            width: 700px;
+            background-size: ;
         }
         th, td {
             border: 1px solid #000000;
@@ -26,53 +24,63 @@
         .coprof {
             background-color: lightsteelblue;
         }
+        div#tabela {
+            overflow-x: auto;
+        }
     </style>
 </head>
 <body>
     <h1>utilizando o colgroup para destacar colunas</h1>
     <p>no html5 foi criada a tag COLGROUP que é uma maneira de destacar as colunas inteiras das tabelas</p>
     <p>dentro da tag colgroup se insere a tag col, uma para cada coluna, e em cada uma se atribui uma classe</p>
-    <table>
-        <colgroup>
-            <col class="conome">
-            <col class="coidade" span="2">
-            <col class="coprof">
-        </colgroup>
-        <caption>tabela de cadastro</caption>
-        <thead>
-            <tr>
-                <th>nome</th>
-                <th>idade</th>
-                <th>profissão</th>
-                <th>cidade</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>rafael</td>
-                <td>42</td>
-                <td>corretor</td>
-                <td>p fundo</td>
-            </tr>
-            <tr>
-                <td>joão</td>
-                <td>33</td>
-                <td>propagandista</td>
-                <td>marau</td>
-            </tr>
-            <tr>
-                <td>maria</td>
-                <td>39</td>
-                <td>médica</td>
-                <td>sananduva</td>
-            </tr>
-            <tr>
-                <td>marcos</td>
-                <td>58</td>
-                <td>pedreiro</td>
-                <td>erechim</td>
-            </tr>
-        </tbody>
-    </table>
+    <div id="tabela">
+        <table>
+            <colgroup>
+                <col class="conome">
+                <col class="coidade" span="2">
+                <col class="coprof">
+            </colgroup>
+            <caption>tabela de cadastro</caption>
+            <thead>
+                <tr>
+                    <th>nome</th>
+                    <th>idade</th>
+                    <th>profissão</th>
+                    <th>cidade</th>
+                    <th>endereço</th>
+                    <th>bairro</th>
+                    <th>cep</th>
+                    <th>telefone</th>
+                    <th>email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>rafael</td>
+                    <td>42</td>
+                    <td>corretor</td>
+                    <td>p fundo</td>
+                </tr>
+                <tr>
+                    <td>joão</td>
+                    <td>33</td>
+                    <td>propagandista</td>
+                    <td>marau</td>
+                </tr>
+                <tr>
+                    <td>maria</td>
+                    <td>39</td>
+                    <td>médica</td>
+                    <td>sananduva</td>
+                </tr>
+                <tr>
+                    <td>marcos</td>
+                    <td>58</td>
+                    <td>pedreiro</td>
+                    <td>erechim</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
