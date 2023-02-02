@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div#social {
+            display: block;
+            height: 40px;
+            align-content: right;
+        }
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #ffae00;
+        }
+
+        .header-logo {
+            flex: 1;
+        }
+
+        .header-nav {
+            flex: -5;
+            text-align: right;
+        }
+
+        .header-nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .header-nav li {
+            margin-left: 20px;
+            align-items: inherit;
+        }
+
+        .header-nav a {
+            font-size: 1.3em;
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="social">icones redes sociais</div>
+        <div class="header-container">
+          <div class="header-logo">
+            <img src="logo.png" alt="Logo">
+          </div>
+          <nav class="header-nav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Quem somos</a></li>
+              <li><a href="#">Empreendimentos</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+</body>
+</html>
