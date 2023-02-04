@@ -16,10 +16,17 @@ aside {
     align-items: center;
     justify-content: space-between;
     background-color: orange;
-    height: 50px;
+    height: 80px;
     padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
+section {
+    height: 10000px;
+}
 nav {
     display: flex;
 }
@@ -38,11 +45,18 @@ a:hover {
     color: white;
 }
 
+.icones {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
 .heading {
-    background-image: url('logo2.png');
-    background-position: content;
+    
 }
 
 .logo {
-    
+    background-image: url('logo.png');
 }
