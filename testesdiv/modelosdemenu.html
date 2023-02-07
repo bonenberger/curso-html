@@ -11,57 +11,118 @@
             padding: 0;
             box-sizing: border-box;
             font-family: Arial, Helvetica, sans-serif;
-            border: 1px solid #000;
         }
         body {
             font-size: 62.5%;
             width: 800px;
+            
         }
         header {
-            background-color: #ffae00;
             display: flex;
+            background-color: #ffae00;
             padding: 10px;
             justify-content: space-between;
             align-items: center;
             width: 100vw;
+            height: 75px;
         }
         li {
             list-style: none;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
         ul {
             display: flex;
-            gap: 10px;
+            align-items: center;
+            gap: 1.5rem;
+            margin-right: 20px;
         }
         .button {
+            display: inline-block;
             background-color: black;
-            width: 80px;
-            height: 30px;
             color: white;
-            border-radius: 10px;
+            border-radius: 15px;
             padding: 10px;
-            font-size: 1rem;
-            text-align: center;
-            text-justify: auto;
+            font-size: 1.2rem;
+            align-items: center;
         }
         a {
             text-decoration: none;
+            color: black;
+        }
+        a.logo:hover {
+            background: none;
+            transition: none;
+        }
+        a:hover {
+            color: white;
+            background-color: black;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        div.conteiner {
+            display: flex;
+            justify-content: stretch;
+            margin: auto;
+            background-color: black;
+            height: 100vh;
+            width: 100vw;
+        }
+        .inferior {
+            display: flex;
+            justify-content: flex-start;
+            margin: auto;
+            background-color: #ffae00;
+            height: 100vh;
+            width: 100vw;
+        }
+        .one {
+            background-color: blue;
+            columns: 2;
+            text-align: justify;
+            opacity: 50%;
+        }
+        .two {
+            background-color: red;
+        }
+        .three {
+            background-color: green;
         }
 
+        .inbox {
+            width: 300px;
+            height: 300px;
+        }
+        p {
+            color: white;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1><img src="Imóveisrdsf.png" alt="logo"></h1>
+        <h1><a href="#" class="logo"><img src="Imóveisrdsf.png" alt="logo"></a></h1>
         <nav>
             <ul>
-                <li>home</li>
-                <li>notícias</li>
-                <li>contato</li>
-                <li>sobre nós</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Empreendimentos</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#" class="button">Contato</a></li>
             </ul>
         </nav>
-        <a href="#" class="button">contato</a>
     </header>
+    <div class="conteiner">
+        <div class="one inbox">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                 quo accusantium officiis! Praesentium numquam ut voluptatum, assumenda atque commodi, suscipit maxime nam possimus, repellat nesciunt. Quas nisi esse deserunt quidem.</p>
+        </div>
+        <div class="two inbox">
+
+        </div>
+        <div class="three inbox">
+
+        </div>
+    </div>
+    <div class="inferior">
+
+    </div>
 </body>
 </html>
