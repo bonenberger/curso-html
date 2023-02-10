@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids</title>
+    <style>
+        body, html {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            background-color: lightblue;
+        }
+        .container {
+            background-color: lightsalmon;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            grid-template-rows: 20vh 70vh 10vh
+            grid-template-areas: "h h"
+        }
+        header {
+            background-color: yellow;
+            grid-area: h;
+        }
+        main {
+            background-color: blue;
+            grid-area: m;
+        }
+        aside {
+            background-color: red;
+            grid-area: a;
+        }
+        footer {
+            background-color: green;
+            grid-area: f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>cabeçalho</header>
+        <main>principal</main>
+        <aside>lateral</aside>
+        <footer>rodapé</footer>
+    </div>
+</body>
+</html>
