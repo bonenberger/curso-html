@@ -15,34 +15,73 @@
         .container {
             background-color: lightsalmon;
             display: grid;
+            grid-template-areas: 
+                "h h"
+                "n n"
+                "p p"
+                "f f"
+            ;
             grid-template-columns: 3fr 1fr;
-            grid-template-rows: 20vh 70vh 10vh
-            grid-template-areas: "h h"
+            grid-template-rows: 150px 80vh 40px;
+
         }
         header {
-            background-color: yellow;
+            display: flex;
+            grid-template-columns: 1fr 2fr;
+            justify-content: space-between;
+            background-color: #ffae00;
             grid-area: h;
+            align-content: center;
+        }
+        header h1 img {
+            
+        }
+        nav ul {
+            display: block;
+        }
+        nav ul li {
+            list-style-type: none;
+            padding: 5px;
+            color: #ffae00;
+            font-size: 1.9em;
+        }
+        nav {
+            height: 120px;
+            background-color: black;
+            grid-area: n;
         }
         main {
             background-color: blue;
-            grid-area: m;
-        }
-        aside {
-            background-color: red;
-            grid-area: a;
+            grid-area: p;
         }
         footer {
-            background-color: green;
+            background-color: #ffae00;
             grid-area: f;
+            text-align: center;
+            
+        }
+        a {
+            text-decoration: none;
+            color: #ffae00;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>cabeçalho</header>
+        <header>
+            <h1><img src="imagens/logo2.png" alt="logo"></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Empreendimentos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
         <main>principal</main>
-        <aside>lateral</aside>
-        <footer>rodapé</footer>
+        <footer>
+            <p>Site criado por <a href="https://www.instagram.com/rafael.bonenberger" target="_blank">Rafael</a></p>
+        </footer>
     </div>
 </body>
 </html>
