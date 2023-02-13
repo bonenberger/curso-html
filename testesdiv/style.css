@@ -27,11 +27,12 @@ body {
 li {
     list-style-type: none;
     font-size: 2em;
-    text-align: center;
+    text-align: right;
 }
 a {
     text-decoration: none;
-    color: coral;
+    color: darkorchid;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.471);
 }
 a:hover {
     color: white;
