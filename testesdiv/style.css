@@ -1,0 +1,38 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: lightcoral;
+}
+.container {
+    display: block;
+    height: 50vh;
+    padding: 10px;
+    background-image: url(imagens/fotocapa.JPG);
+    background-position: center center;
+    background-size: cover;
+    justify-content: space-between;
+}
+.corpo {
+    background-color: white;
+    height: 50vh;
+}
+.contato {
+    background-color: lightpink;
+    height: 50vh;
+}
+li {
+    list-style-type: none;
+    font-size: 2em;
+    text-align: right;
+}
+a {
+    text-decoration: none;
+    color: coral;
+}
+a:hover {
+    color: white;
+}
