@@ -8,7 +8,7 @@ body {
     background-color: lightcoral;
 }
 .container {
-    display: block;
+    display: flex;
     height: 50vh;
     padding: 10px;
     background-image: url(imagens/fotocapa.JPG);
@@ -24,6 +24,9 @@ body {
     background-color: lightpink;
     height: 50vh;
 }
+ul {
+    display: flex
+}
 li {
     list-style-type: none;
     font-size: 2em;
@@ -31,9 +34,14 @@ li {
 }
 a {
     text-decoration: none;
-    color: darkorchid;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.471);
+    color: black;
 }
 a:hover {
     color: white;
+}
+div > h1 {
+    background-color: pink;
+}
+div > nav {
+    background-color: pink;
 }
